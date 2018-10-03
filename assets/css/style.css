@@ -1,48 +1,41 @@
 
-/*#fixed{
-    background: #eee;
-    position: fixed;
-    padding: 40px;
-    text-align: center;
-    margin: 0;
-    top: 0;
-    left: 0;
-}*/
-
-* {
-  /*box-sizing: border-box;*/
+body {
+  background-image: url('/Basic-Portfolio/assets/images/concrete_seamless.png');
+  background-size: cover;
 }
 
-.wrapper{
-  width: 960px;
+p {
+  color: #777777;
+  font-family: "Helvetica";
+  line-break: auto;
+}
+
+img{
+  clear: both;
+  float: left;
+  width: 178px;
+  height: 134px;
+}
+
+.container{
+  max-width: 960px;
   margin: 0 auto 0 auto;
-  border-style: solid;
-  border-color: grey;
-  border-width: 1px;
-  top:0;
+  /*border: 5px solid #dddddd;*/
 }
-    
+
 .header {
-  padding: 30px;
-  margin-bottom: 20px;
+  width: 100%;
+  padding: 40px;
+  margin: 0 auto 0;
   background: #ffffff;
   top:0;
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-bottom-color: #cccccc;
 }
-
-#fixed {
-  /*position: fixed;*/
-  background: #4aaaa5;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  margin: 0;
-  top: 0;
-  border-style: solid;
-  float: left;
-}
-
 
 .footer {
+  width: 100%;
   padding: 30px;
   color: #333;
   background: #666666;
@@ -53,6 +46,28 @@
   border-top-color: rgb(118, 218, 201);
   text-align: center;
   clear: both;
+}
+
+#content{
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+#content h1{
+  color: #4aaaa5;
+}
+
+#absolute {
+  position: absolute;
+  background: #4aaaa5;
+  color: white;
+  text-align: center;
+  height: 70px;
+  padding: 10px;
+  margin: 0;
+  top: 0;
+  border-style: solid;
+  float: left;
 }
 
 #nav ul {
@@ -70,20 +85,14 @@
   content: " | ";
 }
 
-h1{
-  
-}
-
 #content{
   clear: both;
   width: 865px;
+  height: 450px;
   border: solid;
+  border-width: 1px;
+  border-color: #dddddd;
   margin-left: 70px;
+  background-color: #ffffff;
 }
 
-img{
-  clear: both;
-  float: left;
-  width: 178px;
-  height: 134px;
-}
