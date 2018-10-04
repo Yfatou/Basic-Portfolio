@@ -15,15 +15,6 @@ p {
   margin: 0 auto;
 }
 
-#content img{ /*About me picture*/
-  clear: both;
-  float: left; 
-  width: 200px;
-  height: 200px;
-  padding: 20px;
-  object-fit: cover; /*to adjust the image*/
-}
-
 label{ /*labels for the contact form*/
   color: #777777;
   font-size: 15px;
@@ -89,9 +80,18 @@ input[type=submit] { /*submit button of the contact form*/
   clear: both;
 }
 
+#content img{ /*About me picture*/
+  clear: both;
+  float: left; 
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  object-fit: cover; /*to adjust the image*/
+}
+
 #content{ /*content area for the 3 pages*/
   max-width: 960px;
-  margin-top: 110px;
+  margin-top: 100px;
   padding: 30px;
 }
 
@@ -107,9 +107,10 @@ input[type=submit] { /*submit button of the contact form*/
 }
 
 #absolute {
-  position: relative;
+  position: relative; /*position relative to be able to move it*/
   background: #4aaaa5;
   color: white;
+  left: 21%;
   text-align: center;
   height: 70px;
   padding: 10px;
@@ -124,6 +125,8 @@ input[type=submit] { /*submit button of the contact form*/
 
 #nav ul { /*navigation bar list, floated right*/
   float: right;
+  position: relative; /*position relative to be able to move it*/
+  right: 230px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -137,6 +140,7 @@ input[type=submit] { /*submit button of the contact form*/
   display: block;
   padding: 20px;
   color: #777777;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #content{ /*main content styling*/
