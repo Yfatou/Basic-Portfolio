@@ -1,32 +1,71 @@
+/*Principal style sheet*/
+*{
+  box-sizing: border-box; /*t include borders and paddingsin the sizing*/
+}
 
 body {
   background-image: url('/Basic-Portfolio/assets/images/concrete_seamless.png');
-  background-size: cover;
+  background-size: cover; /*to have the image cover the background*/
 }
 
 p {
   color: #777777;
-  font-family: "Helvetica";
-  line-break: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8; /*height line for the About paragraph*/
+  margin: 0 auto;
 }
 
-img{
+#content img{ /*About me picture*/
   clear: both;
-  float: left;
-  width: 178px;
-  height: 134px;
+  float: left; 
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  object-fit: cover; /*to adjust the image*/
+}
+
+label{ /*labels for the contact form*/
+  color: #777777;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{ /*title for the contact and portfolio pages*/
+  color: #4aaaa5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  border-bottom: 2px solid #cccccc;
+}
+
+input[type=text], textarea { /*placeholder textarea for inputs of the contact form*/
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc; 
+  margin-bottom: 10px; 
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777777;
+}
+
+input[type=submit] { /*submit button of the contact form*/
+  background-color: #4aaaa5;
+  width: 75px;
+  height: 28px;
+  color: white;
+  text-align: center;
 }
 
 .container{
   max-width: 960px;
   margin: 0 auto 0 auto;
-  /*border: 5px solid #dddddd;*/
 }
 
-.header {
+.header { /*the same header for all 3 pages*/
   width: 100%;
-  padding: 40px;
-  margin: 0 auto 0;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   background: #ffffff;
   top:0;
   border-bottom-style: solid;
@@ -34,58 +73,73 @@ img{
   border-bottom-color: #cccccc;
 }
 
-.footer {
+.footer { /*the same footer for all 3 pages*/
   width: 100%;
-  padding: 30px;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   color: #333;
   background: #666666;
   border-style: solid;
-  border-color: gray;
   border-width: 2px;
   border-top-width: 5px;
-  border-top-color: rgb(118, 218, 201);
+  border-top-color: #4aaaa5;
   text-align: center;
   clear: both;
 }
 
-#content{
-  margin-top: 30px;
-  margin-bottom: 80px;
+#content{ /*content area for the 3 pages*/
+  max-width: 960px;
+  margin-top: 110px;
+  padding: 30px;
 }
 
-#content h1{
+#content h1{ /*Title of the content area*/
   color: #4aaaa5;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  border-bottom: 2px solid #cccccc;
+}
+
+#absolute h1{
+  margin-top: 0px;
 }
 
 #absolute {
-  position: absolute;
+  position: relative;
   background: #4aaaa5;
   color: white;
   text-align: center;
   height: 70px;
   padding: 10px;
-  margin: 0;
-  top: 0;
-  border-style: solid;
+  max-width: 960px;
+  margin: 0 auto 0 auto;
   float: left;
 }
 
-#nav ul {
+#nav li { /* navigation bar list*/
+  float: left; /*float left to have the navigation button in the right order before float right*/
+}
+
+#nav ul { /*navigation bar list, floated right*/
+  float: right;
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  float: right;
 }
 
-#nav ul li {
-  list-style-type: none;
-  display: inline;
-}
-
-#nav li:not(:first-child):before {
+/*#nav li:not(:first-child):before { /*to display a pipe between the navigation button -NOT WORKING
   content: " | ";
+}*/
+
+#nav li a{ 
+  display: block;
+  padding: 20px;
+  color: #777777;
 }
 
-#content{
+#content{ /*main content styling*/
   clear: both;
   width: 865px;
   height: 450px;
@@ -94,5 +148,25 @@ img{
   border-color: #dddddd;
   margin-left: 70px;
   background-color: #ffffff;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+      width: 100%;
+  }
 }
 

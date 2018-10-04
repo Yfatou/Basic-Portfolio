@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About me</title>
+
+    <!--Link to the css sheet-->
+    <link rel="stylesheet" type="text/css" href="/Basic-Portfolio/assets/css/style.css">
+    <!--<link rel="stylesheet" href="assets/css/reset.css">-->
+</head>
+
+<body>
+
+    <!--Div for the container-->
+    <div class="container">
+    
+        <!--div for the header-->
+        <div class="header">
+            
+            <div id="absolute">
+                <h1>Yaye Fatou Thiam</h1>
+            </div>
+
+            <!--for the navigation buttons-->
+            <div id="nav">
+                <ul>
+                    <li><a href="index.html" style="text-decoration:none">About</a></li> <!--link to the index page-->
+                    <li><a href="portfolio.html" style="text-decoration:none">Portfolio</a></li> <!--Link to the portfolio page-->
+                    <li><a href="contact.html" style="text-decoration:none">Contact</a></li> <!--Link to the contact page-->
+                </ul>
+            </div>
+
+        </div>
+        
+        <!--section for the content-->
+        <div id="content">
+
+            <h3>Contact</h3>
+
+            <!--Contact form-->
+            <form action="action_pqge.php">
+
+                <label for="fname">Name</label> <!--label name-->
+                <input type="text" id="fname" name="name" placeholder="Your name.."> <!--textbox for name-->
+
+                <label for="email">Email</label> <!--label email-->
+                <input type="text" id="email" name="email" placeholder="Your email.."> <!--textbox for email-->
+
+                <label for="message">Message</label> <!--label for message-->
+                <textarea id="message" name="message" style="height:150px"></textarea> <!--textarea for message-->
+
+                <input type="submit" value="Submit"> <!--Submit button-->
+
+            </form>
+       </div>
+    
+        <!--div for the footer-->
+        <div class="footer">
+            Copyright&copy;
+        </div>
+
+    </div>    
+</body>
+</html>
