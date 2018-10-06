@@ -184,15 +184,35 @@ input[type=submit] { /*submit button of the contact form*/
 #nav li a{ 
   display: block;
   padding: 20px;
-  color: #777777;
+  color: #cccccc;
   font-family: Arial, Helvetica, sans-serif;
+  border-right-style: solid;/*border for the 'pipe' sign between the navigation links*/
+  border-right-color: #cccccc;
+  border-right-width: 2px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-top: 15px;
+}
+
+#nav li:last-child a{/*to delete the last border after contac*/
+  border-right: none;
 }
 
 #nav2 li a{ 
   display: block;
   padding: 20px;
-  color: #777777;
+  color: #cccccc;
   font-family: Arial, Helvetica, sans-serif;
+  border-right-style: solid;/*border for the 'pipe' sign between the navigation links*/
+  border-right-color: #cccccc;
+  border-right-width: 2px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-top: 15px;
+}
+
+#nav2 li:last-child a{/*to delete the last border after contac*/
+  border-right: none;
 }
 
 #img1, #img2, #img3, #img4, #img5{/*images of the portfolio page*/
